@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>[hexo已解决]  Error: ENOSPC: System limit for number of file watchers reached</title>
+      <link href="/posts/94e5678c/"/>
+      <url>/posts/94e5678c/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>输入<code>hexo cl &amp;&amp; hexo g &amp;&amp; hexo s</code>的时候 突然报出这个错误</p><blockquote><p>Error: ENOSPC: System limit for number of file watchers reached<br>吓得我按照他的指示，删了很多空文件夹都解决不了</p></blockquote><p>然后<a href="http://blog.sina.com.cn/s/blog_507983580102zalu.html" target="_blank" rel="noopener">百度得知</a><br>这是因为</p><blockquote><p> 是文件监视程序的系统产生了限制，达到了默认的上限，需要增加限额永久增加限额</p></blockquote><p>然后找到了<a href="https://www.jianshu.com/p/4d2edd55b471" target="_blank" rel="noopener">解决方案</a></p><p>在终端按顺序执行下面两个命令即可解决问题</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">echo fs.inotify.max_user_watches&#x3D;524288 | sudo tee -a &#x2F;etc&#x2F;sysctl.conf &amp;&amp; sudo sysctl -p</span><br><span class="line">sudo sysctl --system</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Tutorial </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> bug </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hexo+butterfly+背景代码雨效果</title>
+      <link href="/posts/8e547b21/"/>
+      <url>/posts/8e547b21/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://www.itrhx.com/2018/08/27/A04-Hexo-blog-topic-personalization/" target="_blank" rel="noopener">参考链接</a><br><a href="http://www.lxl8800.cn/Main/Resource" target="_blank" rel="noopener">代码来源</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Tutorial </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> butterfly </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>[多媒体作业]我的大学生活</title>
+      <link href="/posts/24ee7877/"/>
+      <url>/posts/24ee7877/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><!-- <script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script> --><blockquote><p>边听音乐边看吧</p></blockquote>    <div id="aplayer-eLSBnmht" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="70px" data-preload="none" data-theme="#ad7a86"    ></div><blockquote><p>我的个人简历(轮播图展示)</p></blockquote><div class="demo"></div><script>    function tt(){        $('.demo').slider({    imgList: [        {            img: 'https://cdn.jsdelivr.net/gh/blime4/jsd-for-hexo/2020-6-20/1.png',            a: 'https://cdn.jsdelivr.net/gh/blime4/jsd-for-hexo/2020-6-20/1.png',        },        {            img: 'https://cdn.jsdelivr.net/gh/blime4/jsd-for-hexo/2020-6-20/2.png',            a: 'https://cdn.jsdelivr.net/gh/blime4/jsd-for-hexo/2020-6-20/2.png',        },        {            img: 'https://cdn.jsdelivr.net/gh/blime4/jsd-for-hexo/2020-6-20/3.png',            a: 'https://cdn.jsdelivr.net/gh/blime4/jsd-for-hexo/2020-6-20/3.png',        }    ], //图片的列表，a属性里面存放的是网络地址，img存放的是图片地址    width: "100%", //图片的宽    height: 400, //图片的高    isAuto: true, //是否自动轮播    moveTime: 2000, //运动时间    direction: 'right', //轮播的方向    btnWidth: 30, //按钮的宽    btnHeight: 30, //按钮的高    spanWidth: 10, //span按钮的宽    spanHeight: 10, //span按钮的高    spanColor: '#fff', //span按钮的颜色    activeSpanColor: 'red', //选中的span颜色    btnBackgroundColor: 'rgba(0, 0, 0, 0.3)', //两侧按钮的颜色    spanRadius: '50%', //span按钮的圆角程度    spanMargin: 3, //span之间的距离})    }    window.addEventListener('DOMContentLoaded',tt)</script><blockquote><p>我的视频 《我的大学生活》</p></blockquote><div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">    <iframe src="//player.bilibili.com/player.html?aid=796021599&bvid=BV1hC4y1a7gS&cid=202640749&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div><blockquote><p>我的动画 《如何做一个自己的博客》</p></blockquote><div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">    <iframe src="//player.bilibili.com/player.html?aid=841089394&bvid=BV1d54y1B74B&cid=203592193&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> chaos </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> life </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>GitHub搜索技巧</title>
+      <link href="/posts/c357af28/"/>
+      <url>/posts/c357af28/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://www.cnblogs.com/flydashpig/p/11795238.html" target="_blank" rel="noopener">参考链接</a></p><h2 id="star-fork-筛选"><a href="#star-fork-筛选" class="headerlink" title="star,fork 筛选"></a>star,fork 筛选</h2><p><code>关键字 stars:&gt;= 数量 forks:&gt;= 数量</code></p><h2 id="范围搜索"><a href="#范围搜索" class="headerlink" title="范围搜索"></a>范围搜索</h2><p><code>关键字 stars：范围..范围</code></p><h2 id="关键字-in"><a href="#关键字-in" class="headerlink" title="关键字 in"></a>关键字 in</h2><p><code>关键字 in:name,description,Readme</code> (可以一个或多个)</p><h2 id="awesome-关键字"><a href="#awesome-关键字" class="headerlink" title="awesome + 关键字"></a>awesome + 关键字</h2><blockquote><p>一般是指的学习，书籍，工具类，插件类相关的系列的集合。可以有效节约时间，找到别人收集好的内容。awesome 指的是了不起的，碉堡了。<br>github 官方解释：<br>An awesome list is a list of awesome things curated by the community.</p></blockquote><h2 id="location-地方"><a href="#location-地方" class="headerlink" title="location:地方"></a>location:地方</h2><h2 id="language-语言（python-c-）"><a href="#language-语言（python-c-）" class="headerlink" title="language:语言（python,c..）"></a>language:语言（python,c..）</h2><h2 id="user-用户名"><a href="#user-用户名" class="headerlink" title="user:用户名"></a>user:用户名</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> Tutorial </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> github </tag>
+            
+            <tag> tips </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hexo+butterfly+音乐播放器+轮播图+视频</title>
+      <link href="/posts/deaa27b0/"/>
+      <url>/posts/deaa27b0/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="音乐播放器"><a href="#音乐播放器" class="headerlink" title="音乐播放器"></a>音乐播放器</h2>    <div id="aplayer-xOHqERHL" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="140px" data-preload="none" data-theme="#ad7a86"    ></div><blockquote><p>音乐播放器的代码如下</p></blockquote><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; &quot;autoplay&quot; &quot;mutex:false&quot; &quot;listmaxheight:140px&quot; &quot;preload:none&quot; &quot;theme:#ad7a86&quot;%&#125;</span><br></pre></td></tr></table></figure><ul><li>其中的数字 ：就是网页版网易对应的歌单的id</li><li>autoplay:就是默认自动播放</li><li>listmaxheight：就是显示列表的高度</li><li>preload：是否预加载</li><li>theme：主题色</li></ul><h2 id="轮播图"><a href="#轮播图" class="headerlink" title="轮播图"></a>轮播图</h2><p><a href="https://www.antmoe.com/posts/a811d614/index.html#%E8%BD%AE%E6%92%AD%E5%9B%BE" target="_blank" rel="noopener">参考链接</a></p><p>轮播图的修改来源于网络（jq）的一个插件。此项修改引入 js 文件即可。</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">(function () &#123;</span><br><span class="line">  function Slider(option) &#123;</span><br><span class="line">    this.wrap &#x3D; option.wrap;</span><br><span class="line">    this.imgList &#x3D; option.imgList;</span><br><span class="line">    this.imgNum &#x3D; this.imgList.length;</span><br><span class="line">    this.width &#x3D; option.width || $(this.wrap).width();</span><br><span class="line">    this.height &#x3D; option.height || $(this.wrap).height();</span><br><span class="line">    this.isAuto &#x3D; option.isAuto || true;</span><br><span class="line">    this.moveTime &#x3D; option.moveTime;</span><br><span class="line">    this.direction &#x3D; option.direction || &quot;right&quot;;</span><br><span class="line">    this.btnWidth &#x3D; option.btnWidth;</span><br><span class="line">    this.btnHeight &#x3D; option.btnHeight;</span><br><span class="line">    this.spanWidth &#x3D; option.spanWidth;</span><br><span class="line">    this.spanHeight &#x3D; option.spanHeight;</span><br><span class="line">    this.spanColor &#x3D; option.spanColor;</span><br><span class="line">    this.activeSpanColor &#x3D; option.activeSpanColor;</span><br><span class="line">    this.btnBackgroundColor &#x3D; option.btnBackgroundColor;</span><br><span class="line">    this.spanRadius &#x3D; option.spanRadius;</span><br><span class="line">    this.spanMargin &#x3D; option.spanMargin;</span><br><span class="line">    this.flag &#x3D; false;</span><br><span class="line">    this.nowIndex &#x3D; 0;</span><br><span class="line">    this.createDom();</span><br><span class="line">    this.initStyle();</span><br><span class="line">    this.bindEvent();</span><br><span class="line">    if (this.isAuto &#x3D;&#x3D;&#x3D; true) &#123;</span><br><span class="line">      this.autoMove();</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  Slider.prototype.createDom &#x3D; function () &#123;</span><br><span class="line">    var oUl &#x3D; $(&#39;&lt;ul class&#x3D;&quot;imgList&quot;&gt;&lt;&#x2F;ul&gt;&#39;);</span><br><span class="line">    var Spot &#x3D; $(&#39;&lt;div class&#x3D;&quot;spot&quot;&gt;&lt;&#x2F;div&gt;&#39;);</span><br><span class="line">    this.imgList.forEach(function (item) &#123;</span><br><span class="line">      var oLi &#x3D;</span><br><span class="line">        &#39;&lt;li&gt;&lt;a  href&#x3D;&quot; &#39; +</span><br><span class="line">        item.a +</span><br><span class="line">        &#39;target&#x3D;&quot;_blank&quot; &quot;&gt;&lt;img src&#x3D;&quot; &#39; +</span><br><span class="line">        item.img +</span><br><span class="line">        &#39; &quot;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;&#39;;</span><br><span class="line">      oUl.append(oLi);</span><br><span class="line">      var span &#x3D; &quot;&lt;span&gt;&lt;&#x2F;span&gt;&quot;;</span><br><span class="line">      Spot.append(span);</span><br><span class="line">    &#125;);</span><br><span class="line">    var leftBtn &#x3D; $(</span><br><span class="line">      &#39;&lt;div class&#x3D;&quot;left-btn&quot;&gt;&lt;i class&#x3D;&quot;fas fa-angle-left&quot;&gt;&lt;&#x2F;i&gt;&lt;&#x2F;div&gt;&#39;</span><br><span class="line">    );</span><br><span class="line">    var rightBtn &#x3D; $(</span><br><span class="line">      &#39;&lt;div class&#x3D;&quot;right-btn&quot;&gt;&lt;i class&#x3D;&quot;fas fa-angle-right&quot;&gt;&lt;&#x2F;i&gt;&lt;&#x2F;div&gt;&#39;</span><br><span class="line">    );</span><br><span class="line">    this.wrap.append(oUl).append(leftBtn).append(rightBtn).append(Spot);</span><br><span class="line">  &#125;;</span><br><span class="line">  Slider.prototype.initStyle &#x3D; function () &#123;</span><br><span class="line">    $(&quot;*&quot;, this.wrap).css(&#123; margin: 0, padding: 0, listStyle: &quot;none&quot; &#125;);</span><br><span class="line">    $(this.wrap).css(&#123; overflow: &quot;hidden&quot;, position: &quot;relative&quot; &#125;);</span><br><span class="line">    $(&quot;.imgList&quot;, this.wrap).css(&#123;</span><br><span class="line">      width: this.width,</span><br><span class="line">      height: this.height,</span><br><span class="line">      position: &quot;relative&quot;,</span><br><span class="line">    &#125;);</span><br><span class="line">    $(&quot;.imgList li&quot;, this.wrap)</span><br><span class="line">      .css(&#123;</span><br><span class="line">        width: this.width,</span><br><span class="line">        height: this.height,</span><br><span class="line">        position: &quot;absolute&quot;,</span><br><span class="line">        left: 0,</span><br><span class="line">        top: 0,</span><br><span class="line">        display: &quot;none&quot;,</span><br><span class="line">      &#125;)</span><br><span class="line">      .eq(this.nowIndex)</span><br><span class="line">      .css(&#123; display: &quot;block&quot; &#125;);</span><br><span class="line">    $(&quot;.imgList li a, .imgList li a img&quot;, this.wrap).css(&#123;</span><br><span class="line">      display: &quot;inline-block&quot;,</span><br><span class="line">      width: this.width,</span><br><span class="line">      height: this.height,</span><br><span class="line">    &#125;);</span><br><span class="line">    $(&quot;.left-btn, .right-btn&quot;, this.wrap).css(&#123;</span><br><span class="line">      width: this.btnWidth,</span><br><span class="line">      height: this.btnHeight,</span><br><span class="line">      backgroundColor: this.btnBackgroundColor,</span><br><span class="line">      color: &quot;#fff&quot;,</span><br><span class="line">      textAlign: &quot;center&quot;,</span><br><span class="line">      lineHeight: this.btnHeight + &quot;px&quot;,</span><br><span class="line">      position: &quot;absolute&quot;,</span><br><span class="line">      top: &quot;50%&quot;,</span><br><span class="line">      marginTop: -this.btnHeight &#x2F; 2,</span><br><span class="line">      cursor: &quot;pointer&quot;,</span><br><span class="line">    &#125;);</span><br><span class="line">    $(&quot;.right-btn&quot;, this.wrap).css(&#123; right: 0 &#125;);</span><br><span class="line">    $(&quot;.spot&quot;, this.wrap).css(&#123;</span><br><span class="line">      height: this.spanHeight + this.spanMargin * 2,</span><br><span class="line">      position: &quot;absolute&quot;,</span><br><span class="line">      left: &quot;50%&quot;,</span><br><span class="line">      marginLeft: (-this.imgNum * (this.spanWidth + this.spanMargin * 2)) &#x2F; 2,</span><br><span class="line">      bottom: 10,</span><br><span class="line">    &#125;);</span><br><span class="line">    $(&quot;.spot span&quot;, this.wrap)</span><br><span class="line">      .css(&#123;</span><br><span class="line">        display: &quot;inline-block&quot;,</span><br><span class="line">        width: this.spanWidth,</span><br><span class="line">        height: this.spanHeight,</span><br><span class="line">        margin: this.spanMargin,</span><br><span class="line">        backgroundColor: this.spanColor,</span><br><span class="line">        borderRadius: this.spanRadius,</span><br><span class="line">        cursor: &quot;pointer&quot;,</span><br><span class="line">      &#125;)</span><br><span class="line">      .eq(this.nowIndex)</span><br><span class="line">      .css(&#123; backgroundColor: this.activeSpanColor &#125;);</span><br><span class="line">  &#125;;</span><br><span class="line">  Slider.prototype.bindEvent &#x3D; function () &#123;</span><br><span class="line">    var self &#x3D; this;</span><br><span class="line">    $(&quot;.left-btn&quot;, this.wrap).click(function () &#123;</span><br><span class="line">      self.move(&quot;prev&quot;);</span><br><span class="line">    &#125;);</span><br><span class="line">    $(&quot;.right-btn&quot;, this.wrap).click(function () &#123;</span><br><span class="line">      self.move(&quot;next&quot;);</span><br><span class="line">    &#125;);</span><br><span class="line">    $(&quot;.spot span&quot;).click(function (e) &#123;</span><br><span class="line">      self.move($(this).index());</span><br><span class="line">    &#125;);</span><br><span class="line">    $(this.wrap).mouseenter(function () &#123;</span><br><span class="line">      clearInterval(self.time);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;;</span><br><span class="line">  Slider.prototype.move &#x3D; function (dir) &#123;</span><br><span class="line">    if (this.flag) &#123;</span><br><span class="line">      return false;</span><br><span class="line">    &#125;</span><br><span class="line">    this.flag &#x3D; true;</span><br><span class="line">    switch (dir) &#123;</span><br><span class="line">      case &quot;prev&quot;:</span><br><span class="line">        if (this.nowIndex &#x3D;&#x3D;&#x3D; 0) &#123;</span><br><span class="line">          this.nowIndex &#x3D; this.imgNum - 1;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">          this.nowIndex--;</span><br><span class="line">        &#125;</span><br><span class="line">        break;</span><br><span class="line">      case &quot;next&quot;:</span><br><span class="line">        if (this.nowIndex &#x3D;&#x3D;&#x3D; this.imgNum - 1) &#123;</span><br><span class="line">          this.nowIndex &#x3D; 0;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">          this.nowIndex++;</span><br><span class="line">        &#125;</span><br><span class="line">        break;</span><br><span class="line">      default:</span><br><span class="line">        this.nowIndex &#x3D; dir;</span><br><span class="line">        break;</span><br><span class="line">    &#125;</span><br><span class="line">    var self &#x3D; this;</span><br><span class="line">    $(&quot;.imgList li&quot;, this.wrap)</span><br><span class="line">      .fadeOut()</span><br><span class="line">      .eq(this.nowIndex)</span><br><span class="line">      .fadeIn(function () &#123;</span><br><span class="line">        self.flag &#x3D; false;</span><br><span class="line">      &#125;);</span><br><span class="line">    $(&quot;.spot  span&quot;, this.wrap)</span><br><span class="line">      .css(&#123; backgroundColor: this.spanColor &#125;)</span><br><span class="line">      .eq(this.nowIndex % this.imgNum)</span><br><span class="line">      .css(&#123; backgroundColor: this.activeSpanColor &#125;);</span><br><span class="line">  &#125;;</span><br><span class="line">  Slider.prototype.autoMove &#x3D; function () &#123;</span><br><span class="line">    var self &#x3D; this;</span><br><span class="line">    this.time &#x3D; setInterval(function () &#123;</span><br><span class="line">      if (this.direction &#x3D;&#x3D; &quot;left&quot;) &#123;</span><br><span class="line">        $(&quot;.left-btn&quot;, this.wrap).trigger(&quot;click&quot;);</span><br><span class="line">      &#125; else &#123;</span><br><span class="line">        $(&quot;.right-btn&quot;, this.wrap).trigger(&quot;click&quot;);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;, self.moveTime);</span><br><span class="line">  &#125;;</span><br><span class="line">  $.fn.extend(&#123;</span><br><span class="line">    slider: function (option) &#123;</span><br><span class="line">      option.wrap &#x3D; this;</span><br><span class="line">      new Slider(option);</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure><p>使用也很简单，只要在 md 文章中写入以下内容即可</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    function tt()&#123;</span><br><span class="line">        $(&#39;.demo&#39;).slider(&#123;</span><br><span class="line">    imgList: [</span><br><span class="line">        &#123;</span><br><span class="line">            img: &#39;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;blogimg&#x2F;picbed@latest&#x2F;2020&#x2F;04&#x2F;13&#x2F;2a877ea5da1292c817cbc2a254c01c31.png&#39;,</span><br><span class="line">            a: &#39;跳转url地址&#39;,</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            img: &#39;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;blogimg&#x2F;picbed@latest&#x2F;2020&#x2F;04&#x2F;13&#x2F;5005109d1aa2ffd28984c2b02b8cbfbe.png&#39;,</span><br><span class="line">            a: &#39;跳转url地址&#39;,</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            img: &#39;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;blogimg&#x2F;picbed@latest&#x2F;2020&#x2F;04&#x2F;13&#x2F;163a2ade4361d1ed705ed523091af67e.png&#39;,</span><br><span class="line">            a: &#39;跳转url地址&#39;,</span><br><span class="line">        &#125;</span><br><span class="line">    ], &#x2F;&#x2F;图片的列表，a属性里面存放的是网络地址，img存放的是图片地址</span><br><span class="line">    width: &quot;100%&quot;, &#x2F;&#x2F;图片的宽</span><br><span class="line">    height: 500, &#x2F;&#x2F;图片的高</span><br><span class="line">    isAuto: false, &#x2F;&#x2F;是否自动轮播</span><br><span class="line">    moveTime: 3000, &#x2F;&#x2F;运动时间</span><br><span class="line">    direction: &#39;right&#39;, &#x2F;&#x2F;轮播的方向</span><br><span class="line">    btnWidth: 30, &#x2F;&#x2F;按钮的宽</span><br><span class="line">    btnHeight: 30, &#x2F;&#x2F;按钮的高</span><br><span class="line">    spanWidth: 10, &#x2F;&#x2F;span按钮的宽</span><br><span class="line">    spanHeight: 10, &#x2F;&#x2F;span按钮的高</span><br><span class="line">    spanColor: &#39;#fff&#39;, &#x2F;&#x2F;span按钮的颜色</span><br><span class="line">    activeSpanColor: &#39;red&#39;, &#x2F;&#x2F;选中的span颜色</span><br><span class="line">    btnBackgroundColor: &#39;rgba(0, 0, 0, 0.3)&#39;, &#x2F;&#x2F;两侧按钮的颜色</span><br><span class="line">    spanRadius: &#39;50%&#39;, &#x2F;&#x2F;span按钮的圆角程度</span><br><span class="line">    spanMargin: 3, &#x2F;&#x2F;span之间的距离</span><br><span class="line">&#125;)</span><br><span class="line">    &#125;</span><br><span class="line">    window.addEventListener(&#39;DOMContentLoaded&#39;,tt)</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure><h2 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div style&#x3D;&quot;position: relative; width: 100%; height: 0; padding-bottom: 75%;&quot;&gt;</span><br><span class="line">    &lt;iframe src&#x3D;&quot;视频链接&quot; scrolling&#x3D;&quot;no&quot; border&#x3D;&quot;0&quot; frameborder&#x3D;&quot;no&quot; framespacing&#x3D;&quot;0&quot; allowfullscreen&#x3D;&quot;true&quot; allowfullscreen&#x3D;&quot;true&quot; style&#x3D;&quot;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&quot;&gt; &lt;&#x2F;iframe&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Tutorial </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> butterfly </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>[转载]hexo部署到阿里云</title>
+      <link href="/posts/d4ad803f/"/>
+      <url>/posts/d4ad803f/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://blog.csdn.net/NoCortY/article/details/99631249" target="_blank" rel="noopener">十分有用的一篇教程</a></p><p>提示：<br>    当出现 403 的时候<br>    可以看看自己<code>/home/www/wesite</code>文件夹是否为空<br>    如果为空<br>    那么就<br>    <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd &#x2F;home</span><br><span class="line">chmod -R 777 .&#x2F;www</span><br></pre></td></tr></table></figure><br>    然后就可以解决了</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 转载 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> 转载 </tag>
+            
+            <tag> aliyun </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hexo+butterfly+github做一个免费好看的博客</title>
+      <link href="/posts/c6a5b029/"/>
+      <url>/posts/c6a5b029/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote><p>感谢开源，让我一天轻松搭建了一个好看的博客</p><p>我用的是ubuntu 18.04</p></blockquote><p>下面是自己的总结，写一个教程</p><p>网上也有很多很好的教程，也可以直接去看别人的，哈哈哈</p><p>下面列举几个对我很有帮助的教程，和我用到的好用的网站</p><ul><li><p><a href="https://hexo.io/zh-cn/index.html" target="_blank" rel="noopener">hexo官方中文文档</a></p></li><li><p><a href="https://jerryc.me/" target="_blank" rel="noopener">Butterfly 演示DEMO</a></p><p>上面两个网站很有帮助，可以直接看上面的，然后关掉这篇教程都没问题了。</p><p>第二个貌似要科学上网才能进去</p></li><li><p><a href="https://blog.hclonely.com/" target="_blank" rel="noopener">HCLonely Blog</a></p></li><li><p><a href="https://sm.ms/" target="_blank" rel="noopener">https://sm.ms/  免费好用的图床</a></p></li><li><p><a href="https://www.pexels.com/zh-cn/" target="_blank" rel="noopener">免费高质量图库</a></p></li></ul><h2 id="下面正式开始我的教程"><a href="#下面正式开始我的教程" class="headerlink" title="下面正式开始我的教程"></a>下面正式开始我的教程</h2><h3 id="1-安装必备的一些东西"><a href="#1-安装必备的一些东西" class="headerlink" title="1.安装必备的一些东西"></a>1.安装必备的一些东西</h3><h4 id="nodejs"><a href="#nodejs" class="headerlink" title="nodejs"></a>nodejs</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">curl -sL https:&#x2F;&#x2F;deb.nodesource.com&#x2F;setup_10.x | sudo -E bash -</span><br><span class="line">sudo apt-get install -y nodejs</span><br></pre></td></tr></table></figure><p>查看自己是否安装成功</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure><p>显示版本号就说明成功了</p><h4 id="npm淘宝镜像"><a href="#npm淘宝镜像" class="headerlink" title="npm淘宝镜像"></a>npm淘宝镜像</h4><blockquote><p>不然会超级卡</p></blockquote><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure><p>检查是否安装成功</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config get registry</span><br></pre></td></tr></table></figure><blockquote><p>个人测试发现 cnpm有时候也会很慢，所以不用安装</p></blockquote><h3 id="2-安装hexo"><a href="#2-安装hexo" class="headerlink" title="2. 安装hexo"></a>2. 安装hexo</h3><p>哈哈哈 以下就是官网中的五步</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure><p>具体意思就是 安装hexo， -g  就是全局安装的意思，这样哪里都能用</p><p>init 就是初始化 ，这一步可能比较久 大家耐心 一会 </p><p>npm install 就是 再安装一些 需要的依赖</p><p>然后就可以hexo server 打开了</p><p>也可以 hexo g 生成静态页面 再 hexo s 打开</p><p>然后就可以在localhost:4000 中打开了</p><h3 id="3-一些文件的介绍"><a href="#3-一些文件的介绍" class="headerlink" title="3.一些文件的介绍"></a>3.一些文件的介绍</h3><ul><li>_config.yml ：全局配置文件 </li></ul><h3 id="4-安装Butterfly"><a href="#4-安装Butterfly" class="headerlink" title="4 安装Butterfly"></a>4 安装Butterfly</h3><p><a href="https://jerryc.me/posts/21cfbf15/" target="_blank" rel="noopener">hexo-theme-butterfly 安裝文檔(一)快速開始</a></p><p>可直接参考上面的链接</p><p>如果打不开，可以看下面(我只是加了一点点提示，其余一样的)</p><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>在你的博客的根目录拷下来</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone -b master https:&#x2F;&#x2F;github.com&#x2F;jerryc127&#x2F;hexo-theme-butterfly.git themes&#x2F;Butterfly</span><br></pre></td></tr></table></figure><p>如果想要安装比较新的 dev 分支，可以</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone -b dev https:&#x2F;&#x2F;github.com&#x2F;jerryc127&#x2F;hexo-theme-butterfly.git themes&#x2F;Butterfly</span><br></pre></td></tr></table></figure><blockquote><p>由于某些原因 哈哈哈 我现在用的是最新的dev分支</p></blockquote><h4 id="应用主题"><a href="#应用主题" class="headerlink" title="应用主题"></a>应用主题</h4><p>修改站点配置文件<code>_config.yml</code>，把主题改为 <code>Butterfly</code></p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">theme: Butterfly</span><br></pre></td></tr></table></figure><blockquote><p>对小白的贴士：</p><p>不是themes/Butterfly/ 里面的<em>config.yml 是根目录那个</em></p></blockquote><blockquote><p>如果你没有 pug 以及 stylus 的渲染器，请下载安装： <code>npm install hexo-renderer-pug hexo-renderer-stylus --save</code> or <code>yarn add hexo-renderer-pug hexo-renderer-stylus</code></p></blockquote><h4 id="平滑升级"><a href="#平滑升级" class="headerlink" title="平滑升级"></a>平滑升级</h4><p>为了主题的平滑升级，<code>Butterfly</code> 使用了 <a href="https://hexo.io/docs/data-files.html" target="_blank" rel="noopener">data files</a> 特性。</p><p>推荐把主题默认的配置文件<code>_config.yml</code> 复製到 Hexo 工作目录下的 <code>source/_data/butterfly.yml</code>，如果 <code>source/_data</code> 的目录不存在那就创建一个。</p><blockquote><p>注意，如果你创建了 <code>butterfly.yml</code>, 它将会替换主题默认配置文件<code>_config.yml</code> 里的配置项 (<strong>不是合併而是替换</strong>), 之后你就只需要通过 <code>git pull</code> 的方式就可以平滑地升级 <code>theme-butterfly</code> 了。</p></blockquote><blockquote><p>反正这里都是很简单的，要注意不要搞错文件就好了</p><p>然后就安装好了</p></blockquote><p>可以输入下面的命令来看看你的新主题</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</span><br></pre></td></tr></table></figure><p>然后就搞定了</p><h3 id="5-部署到GitHub上"><a href="#5-部署到GitHub上" class="headerlink" title="5 部署到GitHub上"></a>5 部署到GitHub上</h3><p>这里我是参考<a href="https://www.jianshu.com/p/a1a4ebf0e5fc" target="_blank" rel="noopener">Hexo+Butterfly+Github+Coding搭建个人博客</a>的，也可以直接点进去看</p><h4 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h4><p>格式就是 你的名字.github.io</p><p>其他不行</p><p><img src= "/img/loading.gif" data-src="https://i.loli.net/2020/06/15/Z2m7pt64OTN1esF.png" alt="image-20200615233308906"></p><h4 id="配置GIt"><a href="#配置GIt" class="headerlink" title="配置GIt"></a>配置GIt</h4><p>如果第一次使用git的话，需要设置用户名和邮箱:</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;your username&quot;</span><br><span class="line">git config --global user.email &quot;your email&quot;</span><br></pre></td></tr></table></figure><h4 id="生成公钥"><a href="#生成公钥" class="headerlink" title="生成公钥"></a>生成公钥</h4><p>执行以下命令，然后连续三次回车,生成公钥:</p><blockquote><p>直接回车 什么都不用写</p></blockquote><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa</span><br></pre></td></tr></table></figure><p>然后 进去 你就能看到<code>id_rsa</code>  <code>id_rsa.pub</code>两个文件了 就是私钥公钥 </p><p>找到id_rsa.pub文件,用文本编辑工具打开，并复制所有文本内容</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.ssh&#x2F;</span><br><span class="line">vim id_rsa.pub</span><br></pre></td></tr></table></figure><p>打开浏览器</p><p>在Github页面右上角，点击用户头像-Settings-SSH and GPG keys-New SSH key</p><p><img src= "/img/loading.gif" data-src="https://i.loli.net/2020/06/16/1LhtadwxsXyKU9n.png" alt="img"></p><p><img src= "/img/loading.gif" data-src="https://i.loli.net/2020/06/16/vLU7hHajbikcNCR.png" alt="img"></p><p>Title可以随意填写，Key需要填写刚才复制的公钥文本内容。</p><p>添加完成后，在控制台输入:</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure><p>然后就配置好了</p><h4 id="上传文件到Github"><a href="#上传文件到Github" class="headerlink" title="上传文件到Github"></a>上传文件到Github</h4><p>打开_config.yml，在最后面的deploy做以下修改</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: #你的仓库地址,如:https:&#x2F;&#x2F;github.com&#x2F;milovemengmeng&#x2F;milovemengmeng.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure><p>安装一个插件</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><p>安装好了之后,就可以输入<code>hexo d</code>部署到GitHub上了，d 就是deploy 部署</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure><p>然后就ok了</p><p>就可以在浏览器输入</p><p>你的名字.github.io 进入博客了</p><p>至于后续我有空还会更新关于 gitalk 的教程 和 音乐播放器的教程</p><p>其实网上都有， 我也可能不会更新。哈哈哈</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Tutorial </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> github </tag>
+            
+            <tag> hexo </tag>
+            
+            <tag> butterfly </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>002 关联图-散点图</title>
+      <link href="/posts/ca65c192/"/>
+      <url>/posts/ca65c192/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+      
+      
+      <categories>
+          
+          <category> data analysis </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> data </tag>
+            
+            <tag> visual </tag>
+            
+            <tag> analysis </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>001 安装一些必要的东西</title>
+      <link href="/posts/b9ed3f01/"/>
+      <url>/posts/b9ed3f01/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="安装pip"><a href="#安装pip" class="headerlink" title="安装pip"></a>安装pip</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt-get install python3-pip</span><br><span class="line">pip3 --version</span><br></pre></td></tr></table></figure><h2 id="安装matplotlib"><a href="#安装matplotlib" class="headerlink" title="安装matplotlib"></a>安装matplotlib</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip3 install -U matplotlib</span><br></pre></td></tr></table></figure><h2 id="安装seaborn"><a href="#安装seaborn" class="headerlink" title="安装seaborn"></a>安装seaborn</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip3 install seaborn</span><br></pre></td></tr></table></figure><h2 id="安装brewer2mpl"><a href="#安装brewer2mpl" class="headerlink" title="安装brewer2mpl"></a>安装brewer2mpl</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip3 install brewer2mpl</span><br></pre></td></tr></table></figure><h2 id="安装jupyter-notebook"><a href="#安装jupyter-notebook" class="headerlink" title="安装jupyter notebook"></a>安装jupyter notebook</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip3 install jupyter</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> data analysis </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> data </tag>
+            
+            <tag> visual </tag>
+            
+            <tag> analysis </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>数据可视化简洁教程[持续更新中]</title>
+      <link href="/posts/16a8d286/"/>
+      <url>/posts/16a8d286/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote><p>本教程十分简洁，简洁到还没有写完，哈哈哈哈<br>也不会有太多注释</p></blockquote><ul><li><a href="https://blime4.github.io/2020/06/15/001-%E5%AE%89%E8%A3%85%E4%B8%80%E4%BA%9B%E5%BF%85%E8%A6%81%E7%9A%84%E4%B8%9C%E8%A5%BF/">001 安装一些必要的东西</a></li><li><a href="https://blime4.github.io/2020/06/15/002-%E5%85%B3%E8%81%94%E5%9B%BE-%E6%95%A3%E7%82%B9%E5%9B%BE/">002 关联图-散点图</a></li><li><a href="">003 未更新</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> data analysis </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> data </tag>
+            
+            <tag> visual </tag>
+            
+            <tag> analysis </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>[半解决 超简单] 未找到相关的 Issues 进行评论，请联系xxx初始化创建</title>
+      <link href="/posts/732c1931/"/>
+      <url>/posts/732c1931/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>真的超级简单,<br>只要登录一下,<br>然后会有一个授权,<br>授权就好了。</p><p>网上看到一些<a href="https://blog.csdn.net/qq_38593205/article/details/104169248" target="_blank" rel="noopener">其他的帖子</a>说要注意 https 什么的，<br>我是解决不了的。<br>我就直接登录了一下 然后授权就成功了。</p><p>可是在本地的版本 还是不可以<br>不管了 反正可以在线上用 就这样吧</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> chaos </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> error </tag>
+            
+            <tag> gitalk </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>oh-my-zsh自动补全插件incr</title>
+      <link href="/posts/67a08684/"/>
+      <url>/posts/67a08684/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="http://mimosa-pudica.net/zsh-incremental.html" target="_blank" rel="noopener">官网下载</a></p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd .oh-my-zsh&#x2F;plugins&#x2F;</span><br><span class="line">mkdir incr</span><br><span class="line">&#x2F;&#x2F;将下载好的文件放在这个文件夹中</span><br><span class="line">source incr*.zsh</span><br></pre></td></tr></table></figure><p>然后在./zshrc中添加  source ~/.oh-my-zsh/plugins/incr/incr*.zsh</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo vim ~&#x2F;.zshrc</span><br><span class="line">source ~&#x2F;.zshrc</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> chaos </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> zsh </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>manjaro 安装mysql</title>
+      <link href="/posts/a07f0666/"/>
+      <url>/posts/a07f0666/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo pacman -S mysql</span><br></pre></td></tr></table></figure><h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo mysqld --initialize --user&#x3D;mysql --basedir&#x3D;&#x2F;usr --datadir&#x3D;&#x2F;var&#x2F;lib&#x2F;mysql</span><br><span class="line"></span><br><span class="line">2019-08-01T14:02:29.538935Z 0 [Warning] [MY-010915] [Server] &#39;NO_ZERO_DATE&#39;, &#39;NO_ZERO_IN_DATE&#39; and &#39;ERROR_FOR_DIVISION_BY_ZERO&#39; sql modes should be used with strict mode. They will be merged with strict mode in a future release.</span><br><span class="line">2019-08-01T14:02:29.538982Z 0 [System] [MY-013169] [Server] &#x2F;usr&#x2F;bin&#x2F;mysqld (mysqld 8.0.16) initializing of server in progress as process 10795</span><br><span class="line">2019-08-01T14:02:33.612822Z 5 [Note] [MY-010454] [Server] A temporary password is generated for root@localhost: zKaYIm!&gt;x3aK</span><br><span class="line">2019-08-01T14:02:35.009628Z 0 [System] [MY-013170] [Server] &#x2F;usr&#x2F;bin&#x2F;mysqld (mysqld 8.0.16) initializing of server has completed</span><br></pre></td></tr></table></figure><blockquote><p>在安装输出的信息用，写着↑</p><p><a href="https://blog.csdn.net/wolfalcon/article/details/80528678" target="_blank" rel="noopener">basedir,datadir是什么</a></p></blockquote><blockquote><ul><li><p>默认已经创建了一个 SQL 用户</p></li><li><p>用户名： root@localhost</p></li><li><p>密码：zKaYIm!&gt;x3aK</p><p>这个密码是大家不一样的。看输出信息就可以知道密码是什么了</p></li></ul></blockquote><h2 id="开机自启"><a href="#开机自启" class="headerlink" title="开机自启"></a>开机自启</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo systemctl enable mysqld.service</span><br></pre></td></tr></table></figure><h2 id="启动-MySQL-服务"><a href="#启动-MySQL-服务" class="headerlink" title="启动 MySQL 服务"></a>启动 MySQL 服务</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo systemctl start mysqld.service</span><br></pre></td></tr></table></figure><p>查看 MySQL 服务状态</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">systemctl status mysqld.service</span><br></pre></td></tr></table></figure><p>输出如下： Active: active (running) 表示服务已经启动</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">● mysqld.service - MySQL Server</span><br><span class="line">   Loaded: loaded (&#x2F;usr&#x2F;lib&#x2F;systemd&#x2F;system&#x2F;mysqld.service; enabled; vendor preset: disabled)</span><br><span class="line">   Active: active (running) since Thu 2019-08-01 22:03:15 CST; 34s ago</span><br><span class="line">     Docs: man:mysqld(8)</span><br><span class="line">           http:&#x2F;&#x2F;dev.mysql.com&#x2F;doc&#x2F;refman&#x2F;en&#x2F;using-systemd.html</span><br><span class="line">  Process: 11218 ExecStartPre&#x3D;&#x2F;usr&#x2F;bin&#x2F;mysqld_pre_systemd (code&#x3D;exited, status&#x3D;0&#x2F;SUCCESS)</span><br><span class="line"> Main PID: 11235 (mysqld)</span><br><span class="line">   Status: &quot;SERVER_OPERATING&quot;</span><br><span class="line">    Tasks: 38 (limit: 4915)</span><br><span class="line">   Memory: 373.0M</span><br><span class="line">   CGroup: &#x2F;system.slice&#x2F;mysqld.service</span><br><span class="line">           └─11235 &#x2F;usr&#x2F;bin&#x2F;mysqld</span><br></pre></td></tr></table></figure><h2 id="连接数据库"><a href="#连接数据库" class="headerlink" title="连接数据库"></a>连接数据库</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mysql -uroot -p</span><br></pre></td></tr></table></figure><p>输入刚刚的 密码即可连接成功</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Enter password: </span><br><span class="line">Welcome to the MySQL monitor.  Commands end with ; or \g.</span><br><span class="line">Your MySQL connection id is 10</span><br><span class="line">Server version: 8.0.16</span><br><span class="line"></span><br><span class="line">Copyright (c) 2000, 2019, Oracle and&#x2F;or its affiliates. All rights reserved.</span><br><span class="line"></span><br><span class="line">Oracle is a registered trademark of Oracle Corporation and&#x2F;or its</span><br><span class="line">affiliates. Other names may be trademarks of their respective</span><br><span class="line">owners.</span><br><span class="line"></span><br><span class="line">Type &#39;help;&#39; or &#39;\h&#39; for help. Type &#39;\c&#39; to clear the current input statement.</span><br><span class="line"></span><br><span class="line">mysql&gt;</span><br></pre></td></tr></table></figure><h2 id="修改密码"><a href="#修改密码" class="headerlink" title="修改密码"></a>修改密码</h2><p>进入之后就改密码啦，初始化的密码太难记了</p><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">user</span> <span class="string">'root'</span>@<span class="string">'localhost'</span> <span class="keyword">IDENTIFIED</span> <span class="keyword">BY</span> <span class="string">'new_password'</span>;</span><br></pre></td></tr></table></figure><p><a href="https://blog.csdn.net/qq_40829735/article/details/81166669" target="_blank" rel="noopener"> 参考</a></p><p><a href="https://blog.csdn.net/Bruce_Chou/article/details/85081721" target="_blank" rel="noopener">链接</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> sql </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> manjaro </tag>
+            
+            <tag> mysql </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>manjaro 在命令行打开文件夹</title>
+      <link href="/posts/a77e179e/"/>
+      <url>/posts/a77e179e/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>命令行输入</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">dolphin .</span><br></pre></td></tr></table></figure><p>就可以了。<br>（这是随便尝试发现的，有更好的方法也可以写在评论上）</p><p>为了方便。</p><p>我们把它写进～/.zshrc文件中（或者你的是 ～/.bashrc)</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo vim ~&#x2F;.zshrc</span><br><span class="line"></span><br><span class="line">#加入下面这句，我们用open代替</span><br><span class="line"></span><br><span class="line">alias open&#x3D;&#39;dolphin .&#39;</span><br><span class="line"></span><br><span class="line">#然后激活</span><br><span class="line"></span><br><span class="line">source ~&#x2F;.zshrc</span><br></pre></td></tr></table></figure><p>如果是Ubuntu的话，输入这句</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nautilus .</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> chaos </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> manjaro </tag>
+            
+            <tag> cmd </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>manjaro pacman基础命令</title>
+      <link href="/posts/9676c932/"/>
+      <url>/posts/9676c932/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo pacman -Syy                   # 强制更新包数据</span><br><span class="line"></span><br><span class="line">sudo pacman -Syyu                  # 强制更新包数据，同时更新软件</span><br><span class="line"></span><br><span class="line">sudo pacman -Syu                   # 升级整个系统，y是更新数据库，yy是强制更新，u是升级软件</span><br><span class="line"></span><br><span class="line">sudo pacman -Ss string             # 在包数据库中查询软件</span><br><span class="line"></span><br><span class="line">sudo pacman -Si package_name       # 显示软件的详细信息</span><br><span class="line"></span><br><span class="line">sudo pacman -Sc                    # 清除软件缓存，即&#x2F;var&#x2F;cache&#x2F;pacman&#x2F;pkg目录下的文件</span><br><span class="line"></span><br><span class="line">sudo pacman -R package_name        # 删除单个软件</span><br><span class="line"></span><br><span class="line">sudo pacman -Rs package_name       # 删除指定软件及其没有被其他已安装软件使用的依赖关系</span><br><span class="line"></span><br><span class="line">sudo pacman -Qs string             # 查询已安装的软件包</span><br><span class="line"></span><br><span class="line">sudo pacman -Qi package_name       # 查询本地安装包的详细信息</span><br><span class="line"></span><br><span class="line">sudo pacman -Ql package_name       # 获取已安装软件所包含的文件的列表</span><br><span class="line"></span><br><span class="line">sudo pacman -U package.tar.zx      # 从本地文件安装</span><br><span class="line"></span><br><span class="line">sudo pactree package_name          # 显示软件的依赖树</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">yay -c  # 卸载所有无用的依赖。类比 apt-get autoremove</span><br></pre></td></tr></table></figure><h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ul><li><a href="https://wiki.archlinux.org/index.php/Main_page_(简体中文)" target="_blank" rel="noopener">Arch Linux Wiki - 中文</a></li><li><a href="https://aur.archlinux.org/packages" target="_blank" rel="noopener">AUR 仓库</a></li><li><a href="https://www.archlinuxcn.org/archlinux-cn-repo-and-mirror/" target="_blank" rel="noopener">Arch Linux 中文社区仓库</a></li><li><a href="https://github.com/Jguer/yay" target="_blank" rel="noopener">yay - Yet another Yogurt - An AUR Helper written in Go</a></li><li><a href="https://panqiincs.me/2019/06/05/after-installing-manjaro/" target="_blank" rel="noopener">安装Manjaro之后的配置</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> chaos </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> manjaro </tag>
+            
+            <tag> cmd </tag>
+            
+            <tag> pacman </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>manjaro go的安装</title>
+      <link href="/posts/d3f805c8/"/>
+      <url>/posts/d3f805c8/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="manjaro-go的安装"><a href="#manjaro-go的安装" class="headerlink" title="manjaro go的安装"></a>manjaro go的安装</h1><p><a href="https://blog.csdn.net/ggq89/article/details/82682171#2__Go__35" target="_blank" rel="noopener">参考链接</a></p><blockquote><p>挺感谢上面的链接的</p></blockquote><h2 id="1-手动安装-Go"><a href="#1-手动安装-Go" class="headerlink" title="1.手动安装 Go"></a>1.手动安装 Go</h2><ul><li>1.下载Go发行版</li></ul><p>从官方地址：<a href="https://golang.org/dl/" target="_blank" rel="noopener">https://golang.org/dl/</a> 上下载合适的 二进制发行版 (例如: go1.10.7.linux-amd64)：</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">wget https:&#x2F;&#x2F;dl.google.com&#x2F;go&#x2F;go1.12.7.linux-amd64.tar.gz</span><br></pre></td></tr></table></figure><blockquote><p>【2019.8.6】</p><p>会超级无敌慢到不行，连接超时，需要科学上网</p></blockquote><p>这里是我上传到百度网盘的分享，有<a href="https://pan.baiduwp.com/" target="_blank" rel="noopener">pandownload</a>下载有奇速</p><p>链接: <a href="https://pan.baidu.com/s/14GjsNpLxgNPs0JFmCc_weg" target="_blank" rel="noopener">https://pan.baidu.com/s/14GjsNpLxgNPs0JFmCc_weg</a> 提取码: 1234 </p><ul><li>2.提取压缩包</li></ul><p>提取压缩包到合适的目录(例如官方推荐的: /usr/local )：</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo tar -xzf go1.10.7.linux-amd64.tar.gz -C &#x2F;usr&#x2F;local</span><br></pre></td></tr></table></figure><ul><li>3.建立软链接</li></ul><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo ln -s &#x2F;usr&#x2F;local&#x2F;go&#x2F;bin&#x2F;* &#x2F;usr&#x2F;bin&#x2F;</span><br></pre></td></tr></table></figure><p>可以运行如下命令，验证是否安装成功：</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">go version</span><br></pre></td></tr></table></figure><p>正常输出则说明安装成功，同时可以检查版本是否安装正确。</p><h2 id="2-设置-Go-开发环境"><a href="#2-设置-Go-开发环境" class="headerlink" title="2. 设置 Go 开发环境"></a>2. 设置 Go 开发环境</h2><p>使用 vi 编辑环境变量配置文件 $HOME/.bashrc ：</p><p>sudo vim $HOME/.bashrc</p><blockquote><p>如果是zsh,就把/.bashrc 改成 /.zshrc</p></blockquote><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo vim <span class="variable">$HOME</span>/.bashrc</span><br></pre></td></tr></table></figure><p>进入编辑界面后 Shift+G 跳转至尾行，按 o 新插入一行，输入如下：</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">export</span> GOROOT=/usr/<span class="built_in">local</span>/go  <span class="comment">#设置为go安装的路径，有些安装包会自动设置默认的goroot</span></span><br><span class="line"><span class="built_in">export</span> GOPATH=<span class="variable">$HOME</span>/go-work   <span class="comment">#默认安装包的路径</span></span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$GOROOT</span>/bin:<span class="variable">$GOPATH</span>/bin</span><br></pre></td></tr></table></figure><p>之后按 Esc 键，: wq 保存退出。使配置文件生效：</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">source</span> <span class="variable">$HOME</span>/.bashrc　　<span class="comment">#注：这里不要用sudo执行，sudo无该命令</span></span><br></pre></td></tr></table></figure><p>可运行 go env 查看gol环境变量：</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">go env</span><br></pre></td></tr></table></figure><p>正常输出则说明配置成功，同时可对环境变量设置进行校验：</p><blockquote><p>GOARCH=”amd64”<br>GOBIN=””<br>GOCACHE=”/home/blime/.cache/go-build”<br>GOEXE=””<br>GOFLAGS=””<br>GOHOSTARCH=”amd64”<br>GOHOSTOS=”linux”<br>GOOS=”linux”<br>GOPATH=”/home/blime/go-work”<br>GOPROXY=””<br>GORACE=””<br>GOROOT=”/usr/local/go”<br>GOTMPDIR=””<br>GOTOOLDIR=”/usr/local/go/pkg/tool/linux_amd64”<br>GCCGO=”gccgo”<br>CC=”gcc”<br>CXX=”g++”<br>CGO_ENABLED=”1”<br>GOMOD=”/home/blime/go.mod”<br>CGO_CFLAGS=”-g -O2”<br>CGO_CPPFLAGS=””<br>CGO_CXXFLAGS=”-g -O2”<br>CGO_FFLAGS=”-g -O2”<br>CGO_LDFLAGS=”-g -O2”<br>PKG_CONFIG=”pkg-config”<br>GOGCCFLAGS=”-fPIC -m64 -pthread -fmessage-length=0 -fdebug-prefix-map=/tmp/go-build988083162=/tmp/go-build -gno-reco<br>rd-gcc-switches”</p></blockquote><h2 id="3-测试-Go-源码实例"><a href="#3-测试-Go-源码实例" class="headerlink" title="3. 测试 Go 源码实例"></a>3. 测试 Go 源码实例</h2><p>通过构建一个简单的程序来检查Go的安装是否正确，具体操作如下：</p><p>首先创建一个名为 hello.go 的文件，并将以下代码保存在其中：</p><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">    fmt.Printf(<span class="string">"hello, world\n"</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>接着通过 go 工具运行它：</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">go run hello.go</span><br></pre></td></tr></table></figure><p>若看到了“hello, world”信息，那么Go已被正确安装。</p><h2 id="4-卸载-Go"><a href="#4-卸载-Go" class="headerlink" title="4.卸载 Go"></a>4.卸载 Go</h2><p>卸载Go，其实就是将前面安装Go的东西全部删除：</p><ul><li>1.删除 go 目录：</li></ul><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo rm -rf &#x2F;usr&#x2F;local&#x2F;go</span><br></pre></td></tr></table></figure><ul><li>2.删除软链接：</li></ul><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo rm -rf &#x2F;usr&#x2F;bin&#x2F;go</span><br></pre></td></tr></table></figure><h2 id="5-升级-Go-版本"><a href="#5-升级-Go-版本" class="headerlink" title="5.升级 Go 版本"></a>5.升级 Go 版本</h2><p>升级 Go 版本其实就是， 按照前面的步骤:</p><ul><li>卸载之前安装的旧版本Go</li><li>再安装新版本的Go。</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> go </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> go </tag>
+            
+            <tag> manjaro </tag>
+            
+            <tag> tip </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>go 拓展包离线安装 [简单有用]</title>
+      <link href="/posts/d5555b3e/"/>
+      <url>/posts/d5555b3e/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><ol><li><h2 id="获取golang-org-x-tools包"><a href="#获取golang-org-x-tools包" class="headerlink" title="获取golang.org/x/tools包"></a>获取golang.org/x/tools包</h2></li></ol><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;golang&#x2F;tools $GOPATH&#x2F;src&#x2F;golang.org&#x2F;x&#x2F;tools</span><br></pre></td></tr></table></figure><ol start="2"><li><h2 id="git-clone-拓展包"><a href="#git-clone-拓展包" class="headerlink" title="git clone 拓展包"></a>git clone 拓展包</h2></li></ol><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> <span class="variable">$GOPATH</span>/src/</span><br><span class="line"></span><br><span class="line"><span class="comment"># git clone 要下载的包 ，下面举几个例子</span></span><br><span class="line"></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/bytbox/golint.git</span><br><span class="line">go install golint/</span><br><span class="line"></span><br><span class="line"><span class="comment"># 完成</span></span><br></pre></td></tr></table></figure><p>补充</p><table><thead><tr><th>安装的组件</th><th>默认安装状态</th><th>组件备注</th><th>github.com-&gt;golang.org</th></tr></thead><tbody><tr><td>go get -u -v github.com/nsf/gocode</td><td>SUCCEEDED</td><td>自动补全</td><td></td></tr><tr><td>go get -u -v github.com/uudashr/gopkgs/cmd/gopkgs</td><td>SUCCEEDED</td><td>自动补全未导入的包</td><td></td></tr><tr><td>go get -u -v github.com/ramya-rao-a/go-outline</td><td>SUCCEEDED</td><td>当前文件中按符号搜索</td><td><a href="https://github.com/golang/tools" target="_blank" rel="noopener">https://github.com/golang/tools</a></td></tr><tr><td>go get -u -v github.com/acroca/go-symbols</td><td>SUCCEEDED</td><td>当前workspace中按符号搜索</td><td></td></tr><tr><td>go get -u -v golang.org/x/tools/cmd/guru</td><td>SUCCEEDED</td><td>查找所有引用组件</td><td></td></tr><tr><td>go get -u -v golang.org/x/tools/cmd/gorename</td><td>SUCCEEDED</td><td>重命名符号</td><td></td></tr><tr><td>go get -u -v github.com/fatih/gomodifytags</td><td>SUCCEEDED</td><td>修改结构上的标签</td><td></td></tr><tr><td>go get -u -v github.com/haya14busa/goplay/cmd/goplay</td><td>SUCCEEDED</td><td>for running current file in the Go playground</td><td></td></tr><tr><td>go get -u -v github.com/josharian/impl</td><td>SUCCEEDED</td><td>for generating stubs for interfaces</td><td></td></tr><tr><td>go get -u -v github.com/davidrjenni/reftools/cmd/fillstruct</td><td>SUCCEEDED</td><td>for filling a struct literal with default values</td><td></td></tr><tr><td>go get -u -v github.com/rogpeppe/godef</td><td>SUCCEEDED</td><td>转到定义2</td><td></td></tr><tr><td>go get -u -v golang.org/x/tools/cmd/godoc</td><td>SUCCEEDED</td><td>鼠标悬停显示文档注释2</td><td></td></tr><tr><td>go get -u -v sourcegraph.com/sqs/goreturns</td><td>SUCCEEDED</td><td>格式化代码2</td><td></td></tr><tr><td>go get -u -v github.com/golang/lint/golint</td><td>SUCCEEDED</td><td>for linting</td><td><a href="https://github.com/golang/lint" target="_blank" rel="noopener">https://github.com/golang/lint</a></td></tr><tr><td>go get -u -v github.com/cweill/gotests/…</td><td>SUCCEEDED</td><td>生成单元测试</td><td></td></tr><tr><td>go get -u -v github.com/derekparker/delve/cmd/dlv</td><td>SUCCEEDED</td><td>调试</td><td></td></tr><tr><td>go get -u -v github.com/zmb3/gogetdoc</td><td></td><td>转到定义2/鼠标悬停显示注释2</td><td></td></tr><tr><td>go get -u -v golang.org/x/tools/cmd/goimports</td><td></td><td>格式化代码2</td><td></td></tr></tbody></table><p><a href="https://www.cnblogs.com/justdoyou/p/9853520.html" target="_blank" rel="noopener">参考链接</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> go </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> go </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>go 自动补全</title>
+      <link href="/posts/f3c9a5f8/"/>
+      <url>/posts/f3c9a5f8/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>设置–&gt;[go]–&gt;setting.json</p><figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"files.autoSave"</span>: <span class="string">"afterDelay"</span>,</span><br><span class="line">    <span class="attr">"workbench.colorTheme"</span>: <span class="string">"One Dark Pro Vivid"</span>,</span><br><span class="line">    <span class="attr">"window.menuBarVisibility"</span>: <span class="string">"toggle"</span>,</span><br><span class="line">    <span class="attr">"explorer.confirmDelete"</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">"explorer.confirmDragAndDrop"</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">"go.formatTool"</span>: <span class="string">"goimports"</span>,</span><br><span class="line">    <span class="attr">"go.useLanguageServer"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"workbench.iconTheme"</span>: <span class="string">"vscode-great-icons"</span>,</span><br><span class="line">    <span class="attr">"go.inferGopath"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"go.gopath"</span>: <span class="string">"/home/blime/go-work/"</span>,</span><br><span class="line">    <span class="attr">"go.useCodeSnippetsOnFunctionSuggest"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"go.autocompleteUnimportedPackages"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"go.useCodeSnippetsOnFunctionSuggestWithoutType"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"go.gotoSymbol.includeImports"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"go.gotoSymbol.includeGoroot"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"go.gocodePackageLookupMode"</span>: <span class="string">"go"</span>,</span><br><span class="line">    <span class="attr">"window.zoomLevel"</span>: <span class="number">0</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> go </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> go </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>

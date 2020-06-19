@@ -1,0 +1,41 @@
+class:
+  class_name: 友人帐
+  class_descr: 小伙伴们好呀
+  link_list:
+    1:
+      name: HCLonely Blog
+      link: https://blog.hclonely.com/
+      avatar: https://cdn.jsdelivr.net/gh/HCLonely/hclonely.github.io@1.5.1/img/avatar.jpg
+      descr: 艺术家思维去思考问题，工匠创造精神去开发
+    2:
+      name: 小康博客
+      link: https://www.antmoe.com
+      avatar: https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg
+      descr: 每天进步一点点
+    3:
+      name: Sanarous
+      link: https://bestzuo.cn
+      avatar: https://cdn.jsdelivr.net/gh/Sanarous/files@1.11/images/avatar.jpeg
+      descr: 码农人生
+    4:
+      name: Javidの部屋
+      link: https://javid.cn
+      avatar: https://javid.cn/doraemon.jpg
+      descr: 一个技术路上的おとこのこ
+      width: 1px
+      color: #f9bc17
+    5:
+      name: Windyan
+      link: https://windyan233.github.io
+      avatar: https://cdn.jsdelivr.net/gh/windyan233/blogimg//image/20200613211555.jpg
+      descr: 努力学习的小透明
+    6:
+      name: SL’s Blog
+      link: http://www.slblog.ga
+      avatar: https://cdn.slblog.ga/pic/logo.png/
+      descr: 梦中做梦，做了个白日梦
+      width: 1px
+      color: “#e7ff91” 
+
+  
+
