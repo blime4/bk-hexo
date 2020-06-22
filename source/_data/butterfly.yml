@@ -37,11 +37,10 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-  fa fa-github: https://github.com/blime4/ || Github
+  fa fa-git: https://github.com/blime4/ || Github
   fa fa-envelope: mailto:galiblacklemon1063@gmail.com || Email
   fa fa-rss: /atom.xml || RSS
   fa fa-steam: https://steamcommunity.com/profiles/76561198429011143/ || steam
-
 # search (搜索)
 # --------------------------------------
 
@@ -523,7 +522,7 @@ display_mode: light
 
 # Beautify (美化頁面顯示)
 beautify:
-  enable: false
+  enable: true
   field: post # site/post
   title-prefix-icon: '\f0c1'
   title-prefix-icon-color: '#F47466'
