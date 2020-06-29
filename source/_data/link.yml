@@ -37,5 +37,27 @@ class:
       width: 1px
       color: “#e7ff91” 
 
-  
-
+class2:
+  class_name: 🐼🍓 𝕴𝖓𝖙𝖊𝖗𝖊𝖘𝖙𝖎𝖓𝖌 🍫⛵
+  class_descr: ⛵😝  Ｉ𝓷𝔱ẸʳέşŦĮ𝓃Ǥ  💞🐟
+  link_list:
+    1:
+      name: Instagram Fonts
+      link: https://igfonts.io/
+      descr: 有趣的字体
+      avatar: https://cdn.glitch.com/249e1d47-8b44-42f1-ab83-8375d511040a%2Fkisspng-computer-icons-logo-clip-art-instagram-logo-5acbcae56ab134.png
+    2:
+      name: logoly
+      link: ttps://www.logoly.pro/
+      descr: 黑橙logo
+      avatar: https://www.logoly.pro/img/avatar.f5a8ec98.png
+    3:
+      name: 中国色
+      link: http://zhongguose.com/
+      descr: 中国风配色
+      avatar: http://zhongguose.com/favicon.ico
+    4:
+      name: Bigjpg
+      link: https://bigjpg.com/
+      descr: AI人工智能图片放大
+      avatar: https://bigjpg.com/favicon.ico
