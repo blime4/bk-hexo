@@ -12,6 +12,7 @@
     "version": "4.2.1"
   },
   "dependencies": {
+    "echarts": "^4.8.0",
     "gitalk": "^1.6.2",
     "gulp": "^4.0.2",
     "gulp-htmlmin": "^5.0.1",
