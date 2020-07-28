@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blime4.github.io/"/>
-  <updated>2020-07-26T05:29:53.298Z</updated>
+  <updated>2020-07-28T07:28:18.257Z</updated>
   <id>https://blime4.github.io/</id>
   
   <author>
@@ -17,13 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>数据库基本SQL语句</title>
+    <link href="https://blime4.github.io/posts/21077b3b/"/>
+    <id>https://blime4.github.io/posts/21077b3b/</id>
+    <published>2020-07-28T03:32:11.000Z</published>
+    <updated>2020-07-28T07:28:18.257Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="数据库基本—-SQL-语句大全"><a href="#数据库基本—-SQL-语句大全" class="headerlink" title="数据库基本—-SQL 语句大全"></a>数据库基本—-SQL 语句大全</h1><h2 id="一、基础"><a href="#一、基础" class="headerlink" title="一、基础"></a>一、基础</h2><h3 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h3><p>Create DATABASE database-name </p><h3 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a>删除数据库</h3><p>drop database dbname </p><h3 id="备份-sql-server"><a href="#备份-sql-server" class="headerlink" title="备份 sql server"></a>备份 sql server</h3><blockquote><p>创建 备份数据的 device </p></blockquote><p>USE master<br>EXEC sp_addumpdevice ‘disk’, ‘testBack’, ‘c:\mssql7backup\MyNwind_1.d at’</p><blockquote><p>开始 备份 </p></blockquote><p>BACKUP DATABASE pubs TO testBack </p><h3 id="创建新表"><a href="#创建新表" class="headerlink" title="创建新表"></a>创建新表</h3><p>create table tabname(col1 type1 [not null] [primary key],col2 typ e2 [not null],..) </p><blockquote><p>根据已有的表创建新表： </p></blockquote><p>A：create table tab_new like tab_old (使用旧表创建新表)<br>B：create table tab_new as select col1,col2… from tab_old defini tion only </p><h3 id="删除新表"><a href="#删除新表" class="headerlink" title="删除新表"></a>删除新表</h3><p>drop table tabname </p><h3 id="增加一个列"><a href="#增加一个列" class="headerlink" title="增加一个列"></a>增加一个列</h3><p>Alter table tabname add column col type </p><blockquote><p>注：列增加后将不能删除。DB2 中列加上后数据类型也不能改变，唯一能改变的是增 加 varchar 类型的长度。 </p></blockquote><h3 id="添加删除主键："><a href="#添加删除主键：" class="headerlink" title="添加删除主键："></a>添加删除主键：</h3><p>Alter table tabname add primary key(col) </p><p>Alter table tabname drop primary key(col) </p><h3 id="创建删除索引："><a href="#创建删除索引：" class="headerlink" title="创建删除索引："></a>创建删除索引：</h3><p>create [unique] index idxname on tabname(col….)<br>drop index idxname     </p><blockquote><p>注：索引是不可更改的，想更改必须删除重新建。 </p></blockquote><h3 id="创建删除视图："><a href="#创建删除视图：" class="headerlink" title="创建删除视图："></a>创建删除视图：</h3><p>create view viewname as select statement</p><p>drop view viewname </p><h3 id="几个简单的基本的-sql-语句"><a href="#几个简单的基本的-sql-语句" class="headerlink" title="几个简单的基本的 sql 语句"></a>几个简单的基本的 sql 语句</h3><pre><code>+ 选择：select * from table1 where 范围     + 插入：insert into table1(field1,field2) values(value1,value2)     + 删除：delete from table1 where 范围     + 更新：update table1 set field1=value1 where 范围     + 查找：select * from table1 where field1 like ’%value1%’ ---like 的语法很精妙，查资料!     + 排序：select * from table1 order by field1,field2 [desc]+ 总数：select count as totalcount from table1     + 求和：select sum(field1) as sumvalue from table1     + 平均：select avg(field1) as avgvalue from table1     + 最大：select max(field1) as maxvalue from table1     + 最小：select min(field1) as minvalue from table1</code></pre><h3 id="几个高级查询运算词"><a href="#几个高级查询运算词" class="headerlink" title="几个高级查询运算词"></a>几个高级查询运算词</h3><ul><li>UNION<blockquote><p>UNION 运算符通过组合其他两个结果表（例如 TABLE1 和 TABLE2）并消去表中 任何重复行而派生出一个结果表。当 ALL 随 UNION 一起使用时（即 UNION ALL），不消 除 重复行。两种情况下，派生表的每一行不是来自 TABLE1 就是来自 TABLE2。</p></blockquote></li><li>EXCEPT <blockquote><p>EXCEPT 运算符通过包括所有在 TABLE1 中但不在 TABLE2 中的行并消除所有 重复行而派生出一个结果表。当 ALL 随 EXCEPT 一起使用时 (EXCEPT ALL)，不消除重复 行。</p></blockquote></li><li>INTERSECT <blockquote><p>INTERSECT 运算符通过只包括 TABLE1 和 TABLE2 中都有的行并消除所有重复 行而派生出一个结果表。当 ALL 随 INTERSECT 一起使用时 (INTERSECT ALL)，不消除重 复行。注：使用运算词的几个查询结果行必须是一致的。 </p></blockquote></li></ul><h3 id="使用外连接"><a href="#使用外连接" class="headerlink" title="使用外连接"></a>使用外连接</h3><ul><li>left outer join<blockquote><p>左外连接（左连接）：结果集既包括连接表的匹配行，也包括左连接表的所有行。     SQL: select a.a, a.b, a.c, b.c, b.d, b.f from a LEFT OUT JOI N b ON a.a = b.c </p></blockquote></li><li>right outer join<blockquote><p>右外连接(右连接)：结果集既包括连接表的匹配连接行，也包括右连接表的所有行。</p></blockquote></li><li>full outer join：     <blockquote><p>全外连接：不仅包括符号连接表的匹配行，还包括两个连接表中的所有记录。 </p></blockquote></li></ul><h2 id="提升"><a href="#提升" class="headerlink" title="提升"></a>提升</h2><h3 id="复制表-只复制结构-源表名：a-新表名：b-Access-可用"><a href="#复制表-只复制结构-源表名：a-新表名：b-Access-可用" class="headerlink" title="复制表      (只复制结构,源表名：a 新表名：b) (Access 可用)"></a>复制表      (只复制结构,源表名：a 新表名：b) (Access 可用)</h3><pre><code>+ select * into b from a where 1&lt;&gt;1 + select top 0 * into b from a</code></pre><h3 id="拷贝表-拷贝数据-源表名：a-目标表名：b-Access-可用"><a href="#拷贝表-拷贝数据-源表名：a-目标表名：b-Access-可用" class="headerlink" title="拷贝表      (拷贝数据,源表名：a 目标表名：b) (Access 可用)"></a>拷贝表      (拷贝数据,源表名：a 目标表名：b) (Access 可用)</h3><pre><code>insert into b(a, b, c) select d,e,f from b; </code></pre><h3 id="跨数据库之间表的拷贝-具体数据使用绝对路径-Access-可用"><a href="#跨数据库之间表的拷贝-具体数据使用绝对路径-Access-可用" class="headerlink" title="跨数据库之间表的拷贝        (具体数据使用绝对路径) (Access 可用)"></a>跨数据库之间表的拷贝        (具体数据使用绝对路径) (Access 可用)</h3><pre><code>insert into b(a, b, c) select d,e,f from b in ‘具体数据库’ w here 条件     例子：..from b in &apos;&quot;&amp;Server.MapPath(&quot;.&quot;&amp;&quot;\data.mdb&quot; &amp;&quot;&apos; where..</code></pre><h3 id="子查询"><a href="#子查询" class="headerlink" title="子查询"></a>子查询</h3><pre><code>select a,b,c from a where a IN (select d from b   或者: sel ect a,b,c from a where a IN (1,2,3)</code></pre><h3 id="between"><a href="#between" class="headerlink" title="between"></a>between</h3><pre><code>select * from table1 where time between time1 and time2select a,b,c, from table1 where a not between 数值 1 and 数值 2</code></pre><h3 id="日程安排提前五分钟提醒"><a href="#日程安排提前五分钟提醒" class="headerlink" title="日程安排提前五分钟提醒"></a>日程安排提前五分钟提醒</h3><pre><code>select * from 日程安排 where datediff(‘minute’,f开始时间,getdate())&gt;5</code></pre><h3 id="随机取出-10-条数据"><a href="#随机取出-10-条数据" class="headerlink" title="随机取出 10 条数据"></a>随机取出 10 条数据</h3><pre><code>select top 10 * from tablename order by newid() </code></pre><h3 id="初始化表-table1"><a href="#初始化表-table1" class="headerlink" title="初始化表 table1"></a>初始化表 table1</h3><pre><code>TRUNCATE TABLE table1 </code></pre><h3 id="选择从-10-到-15-的记录"><a href="#选择从-10-到-15-的记录" class="headerlink" title="选择从 10 到 15 的记录"></a>选择从 10 到 15 的记录</h3><pre><code>select top 5 * from (select top 15 * from table order by i d asc) table_别名 order by id desc </code></pre><h2 id="技巧"><a href="#技巧" class="headerlink" title="技巧"></a>技巧</h2><h3 id="1-1，1-2"><a href="#1-1，1-2" class="headerlink" title="1=1，1=2"></a>1=1，1=2</h3><pre><code>“where 1=1” 是表示选择全部   “where 1=2”全部不选</code></pre><h3 id="收缩数据库"><a href="#收缩数据库" class="headerlink" title="收缩数据库"></a>收缩数据库</h3><pre><code>--重建索引     DBCC REINDEX         DBCC INDEXDEFRAG     --收缩数据和日志         DBCC SHRINKDB         DBCC SHRINKFILE </code></pre><h3 id="压缩数据库"><a href="#压缩数据库" class="headerlink" title="压缩数据库"></a>压缩数据库</h3><pre><code>dbcc shrinkdatabase(dbname) </code></pre><p>算了，后面我也不会</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+    
+      <category term="sql" scheme="https://blime4.github.io/tags/sql/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ubuntu mysql5.7 统一 utf8</title>
     <link href="https://blime4.github.io/posts/c5e8d58e/"/>
     <id>https://blime4.github.io/posts/c5e8d58e/</id>
     <published>2020-07-26T05:26:06.000Z</published>
-    <updated>2020-07-26T05:29:53.298Z</updated>
+    <updated>2020-07-26T05:32:44.675Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://blog.csdn.net/qq_32144341/article/details/51318390/" target="_blank" rel="noopener">Ubuntu?MySQL5.7??utf8??????</a></p><ul><li>vim /etc/mysql/mysql.conf.d<blockquote><p>?<code>lc-messages-dir = /usr/share/mysql</code> ????? <code>character-set-server=utf8</code> ??</p><br></blockquote></li><li>vim /etc/mysql/conf.d/mysql.cnf<blockquote><p>??<code>default-character-set=utf8</code></p><br></blockquote></li><li>/etc/init.d/mysql restart</li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://blog.csdn.net/qq_32144341/article/details/51318390/" target="_blank" rel="noopener">Ubuntu中MySQL5.7设置utf8编码格式步骤</a></p><ul><li>vim /etc/mysql/mysql.conf.d<blockquote><p>在<code>lc-messages-dir = /usr/share/mysql</code> 语句后添加 <code>character-set-server=utf8</code></p></blockquote></li><li>vim /etc/mysql/conf.d/mysql.cnf<blockquote><p>添加<code>default-character-set=utf8</code></p></blockquote></li><li>/etc/init.d/mysql restart</li></ul>]]></content>
     
     <summary type="html">
     
@@ -535,34 +559,6 @@
     
     
       <category term="numpy" scheme="https://blime4.github.io/tags/numpy/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>[hexo已解决]  Error: ENOSPC: System limit for number of file watchers reached</title>
-    <link href="https://blime4.github.io/posts/94e5678c/"/>
-    <id>https://blime4.github.io/posts/94e5678c/</id>
-    <published>2020-06-19T19:16:56.000Z</published>
-    <updated>2020-06-19T19:20:51.460Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>输入<code>hexo cl &amp;&amp; hexo g &amp;&amp; hexo s</code>的时候 突然报出这个错误</p><blockquote><p>Error: ENOSPC: System limit for number of file watchers reached<br>吓得我按照他的指示，删了很多空文件夹都解决不了</p></blockquote><p>然后<a href="http://blog.sina.com.cn/s/blog_507983580102zalu.html" target="_blank" rel="noopener">百度得知</a><br>这是因为</p><blockquote><p> 是文件监视程序的系统产生了限制，达到了默认的上限，需要增加限额永久增加限额</p></blockquote><p>然后找到了<a href="https://www.jianshu.com/p/4d2edd55b471" target="_blank" rel="noopener">解决方案</a></p><p>在终端按顺序执行下面两个命令即可解决问题</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">echo fs.inotify.max_user_watches&#x3D;524288 | sudo tee -a &#x2F;etc&#x2F;sysctl.conf &amp;&amp; sudo sysctl -p</span><br><span class="line">sudo sysctl --system</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
-      
-    
-    </summary>
-    
-    
-      <category term="Tutorial" scheme="https://blime4.github.io/categories/Tutorial/"/>
-    
-    
-      <category term="bug" scheme="https://blime4.github.io/tags/bug/"/>
-    
-      <category term="hexo" scheme="https://blime4.github.io/tags/hexo/"/>
     
   </entry>
   
